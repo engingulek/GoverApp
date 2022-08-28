@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		7D42B19528BBC2F20005CACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B19428BBC2F20005CACA /* AppDelegate.swift */; };
 		7D42B19728BBC2F20005CACA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B19628BBC2F20005CACA /* SceneDelegate.swift */; };
-		7D42B19928BBC2F20005CACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B19828BBC2F20005CACA /* ViewController.swift */; };
+		7D42B19928BBC2F20005CACA /* SingInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B19828BBC2F20005CACA /* SingInVC.swift */; };
 		7D42B19C28BBC2F20005CACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D42B19A28BBC2F20005CACA /* Main.storyboard */; };
 		7D42B19F28BBC2F20005CACA /* Gover.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B19D28BBC2F20005CACA /* Gover.xcdatamodeld */; };
 		7D42B1A128BBC2F50005CACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D42B1A028BBC2F50005CACA /* Assets.xcassets */; };
@@ -17,6 +17,11 @@
 		7D42B1AF28BBC2F50005CACA /* GoverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1AE28BBC2F50005CACA /* GoverTests.swift */; };
 		7D42B1B928BBC2F50005CACA /* GoverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1B828BBC2F50005CACA /* GoverUITests.swift */; };
 		7D42B1BB28BBC2F50005CACA /* GoverUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1BA28BBC2F50005CACA /* GoverUITestsLaunchTests.swift */; };
+		7D42B1CE28BBEA3A0005CACA /* SingInProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1CD28BBEA3A0005CACA /* SingInProtocols.swift */; };
+		7D42B1D028BBF45C0005CACA /* SingInInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1CF28BBF45C0005CACA /* SingInInteractor.swift */; };
+		7D42B1D228BBF4B30005CACA /* SingInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1D128BBF4B30005CACA /* SingInPresenter.swift */; };
+		7D42B1D428BBF68C0005CACA /* SingInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1D328BBF68C0005CACA /* SingInRouter.swift */; };
+		7D42B1D728BBF7E90005CACA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7D42B1D628BBF7E90005CACA /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,7 @@
 		7D42B19128BBC2F20005CACA /* Gover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gover.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D42B19428BBC2F20005CACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7D42B19628BBC2F20005CACA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7D42B19828BBC2F20005CACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7D42B19828BBC2F20005CACA /* SingInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInVC.swift; sourceTree = "<group>"; };
 		7D42B19B28BBC2F20005CACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7D42B19E28BBC2F20005CACA /* Gover.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Gover.xcdatamodel; sourceTree = "<group>"; };
 		7D42B1A028BBC2F50005CACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		7D42B1B428BBC2F50005CACA /* GoverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D42B1B828BBC2F50005CACA /* GoverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoverUITests.swift; sourceTree = "<group>"; };
 		7D42B1BA28BBC2F50005CACA /* GoverUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoverUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7D42B1CD28BBEA3A0005CACA /* SingInProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInProtocols.swift; sourceTree = "<group>"; };
+		7D42B1CF28BBF45C0005CACA /* SingInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInInteractor.swift; sourceTree = "<group>"; };
+		7D42B1D128BBF4B30005CACA /* SingInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInPresenter.swift; sourceTree = "<group>"; };
+		7D42B1D328BBF68C0005CACA /* SingInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D42B1D728BBF7E90005CACA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,9 +111,9 @@
 		7D42B19328BBC2F20005CACA /* Gover */ = {
 			isa = PBXGroup;
 			children = (
+				7D42B1C728BBE9020005CACA /* singPage-model */,
 				7D42B19428BBC2F20005CACA /* AppDelegate.swift */,
 				7D42B19628BBC2F20005CACA /* SceneDelegate.swift */,
-				7D42B19828BBC2F20005CACA /* ViewController.swift */,
 				7D42B19A28BBC2F20005CACA /* Main.storyboard */,
 				7D42B1A028BBC2F50005CACA /* Assets.xcassets */,
 				7D42B1A228BBC2F50005CACA /* LaunchScreen.storyboard */,
@@ -130,6 +140,58 @@
 			path = GoverUITests;
 			sourceTree = "<group>";
 		};
+		7D42B1C728BBE9020005CACA /* singPage-model */ = {
+			isa = PBXGroup;
+			children = (
+				7D42B1CC28BBE9CA0005CACA /* view */,
+				7D42B1CB28BBE9820005CACA /* presenter */,
+				7D42B1CA28BBE9790005CACA /* interactor */,
+				7D42B1C928BBE9710005CACA /* router */,
+				7D42B1C828BBE95E0005CACA /* protocols */,
+			);
+			path = "singPage-model";
+			sourceTree = "<group>";
+		};
+		7D42B1C828BBE95E0005CACA /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7D42B1CD28BBEA3A0005CACA /* SingInProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		7D42B1C928BBE9710005CACA /* router */ = {
+			isa = PBXGroup;
+			children = (
+				7D42B1D328BBF68C0005CACA /* SingInRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		7D42B1CA28BBE9790005CACA /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7D42B1CF28BBF45C0005CACA /* SingInInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		7D42B1CB28BBE9820005CACA /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7D42B1D128BBF4B30005CACA /* SingInPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		7D42B1CC28BBE9CA0005CACA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7D42B19828BBC2F20005CACA /* SingInVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +208,9 @@
 			dependencies = (
 			);
 			name = Gover;
+			packageProductDependencies = (
+				7D42B1D628BBF7E90005CACA /* Alamofire */,
+			);
 			productName = Gover;
 			productReference = 7D42B19128BBC2F20005CACA /* Gover.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +283,9 @@
 				Base,
 			);
 			mainGroup = 7D42B18828BBC2F20005CACA;
+			packageReferences = (
+				7D42B1D528BBF7E90005CACA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 7D42B19228BBC2F20005CACA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -261,9 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D42B19928BBC2F20005CACA /* ViewController.swift in Sources */,
+				7D42B1D028BBF45C0005CACA /* SingInInteractor.swift in Sources */,
+				7D42B19928BBC2F20005CACA /* SingInVC.swift in Sources */,
 				7D42B19F28BBC2F20005CACA /* Gover.xcdatamodeld in Sources */,
+				7D42B1CE28BBEA3A0005CACA /* SingInProtocols.swift in Sources */,
 				7D42B19528BBC2F20005CACA /* AppDelegate.swift in Sources */,
+				7D42B1D228BBF4B30005CACA /* SingInPresenter.swift in Sources */,
+				7D42B1D428BBF68C0005CACA /* SingInRouter.swift in Sources */,
 				7D42B19728BBC2F20005CACA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -606,6 +678,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7D42B1D528BBF7E90005CACA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7D42B1D628BBF7E90005CACA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D42B1D528BBF7E90005CACA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		7D42B19D28BBC2F20005CACA /* Gover.xcdatamodeld */ = {
