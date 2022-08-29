@@ -6,16 +6,16 @@
 //
 
 import Foundation
-
+import Alamofire
 protocol ViewtoPresenterSingInProtocol {
     var interactor : PresenterToInteractorSingInProtocol? {get set}
     var singInView : PresenterToViewSingInProtocol? {get set}
-    func singInAction(email:String,password:String)
+    func singInAction(params:Parameters)
 }
 
 protocol PresenterToInteractorSingInProtocol {
     var singInPresenter : InteractorToPresenterSingInProtocol? {get set}
-    func singIn(email:String,password:String)
+    func singIn(params:Parameters)
 }
 
 

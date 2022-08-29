@@ -25,6 +25,10 @@
 		7DB277FB28BCDC1D00EA7EB5 /* SingInResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */; };
 		7DB277FF28BCE2F700EA7EB5 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */; };
 		7DB2780528BCE6F300EA7EB5 /* SingUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */; };
+		7DB2780728BCE84500EA7EB5 /* SingUpInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2780628BCE84500EA7EB5 /* SingUpInteractor.swift */; };
+		7DB2780928BCE87900EA7EB5 /* SingUpPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2780828BCE87900EA7EB5 /* SingUpPresenter.swift */; };
+		7DB2780B28BCE98500EA7EB5 /* SingUpRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2780A28BCE98500EA7EB5 /* SingUpRouter.swift */; };
+		7DB2780E28BD02B500EA7EB5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 7DB2780D28BD02B500EA7EB5 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +70,9 @@
 		7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInResult.swift; sourceTree = "<group>"; };
 		7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
 		7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpProtocols.swift; sourceTree = "<group>"; };
+		7DB2780628BCE84500EA7EB5 /* SingUpInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpInteractor.swift; sourceTree = "<group>"; };
+		7DB2780828BCE87900EA7EB5 /* SingUpPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpPresenter.swift; sourceTree = "<group>"; };
+		7DB2780A28BCE98500EA7EB5 /* SingUpRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DB2780E28BD02B500EA7EB5 /* SwiftyJSON in Frameworks */,
 				7D42B1D728BBF7E90005CACA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +247,7 @@
 		7DB2780128BCE6C400EA7EB5 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				7DB2780828BCE87900EA7EB5 /* SingUpPresenter.swift */,
 			);
 			path = presenter;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 		7DB2780228BCE6CB00EA7EB5 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				7DB2780A28BCE98500EA7EB5 /* SingUpRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -253,6 +263,7 @@
 		7DB2780328BCE6D800EA7EB5 /* interactor */ = {
 			isa = PBXGroup;
 			children = (
+				7DB2780628BCE84500EA7EB5 /* SingUpInteractor.swift */,
 			);
 			path = interactor;
 			sourceTree = "<group>";
@@ -275,6 +286,7 @@
 			name = Gover;
 			packageProductDependencies = (
 				7D42B1D628BBF7E90005CACA /* Alamofire */,
+				7DB2780D28BD02B500EA7EB5 /* SwiftyJSON */,
 			);
 			productName = Gover;
 			productReference = 7D42B19128BBC2F20005CACA /* Gover.app */;
@@ -350,6 +362,7 @@
 			mainGroup = 7D42B18828BBC2F20005CACA;
 			packageReferences = (
 				7D42B1D528BBF7E90005CACA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				7DB2780C28BD02B500EA7EB5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 7D42B19228BBC2F20005CACA /* Products */;
 			projectDirPath = "";
@@ -396,6 +409,9 @@
 			files = (
 				7D42B1D028BBF45C0005CACA /* SingInInteractor.swift in Sources */,
 				7D42B19928BBC2F20005CACA /* SingInVC.swift in Sources */,
+				7DB2780728BCE84500EA7EB5 /* SingUpInteractor.swift in Sources */,
+				7DB2780928BCE87900EA7EB5 /* SingUpPresenter.swift in Sources */,
+				7DB2780B28BCE98500EA7EB5 /* SingUpRouter.swift in Sources */,
 				7DB277FF28BCE2F700EA7EB5 /* SingUpVC.swift in Sources */,
 				7DB277FB28BCDC1D00EA7EB5 /* SingInResult.swift in Sources */,
 				7D42B19F28BBC2F20005CACA /* Gover.xcdatamodeld in Sources */,
@@ -756,6 +772,14 @@
 				kind = branch;
 			};
 		};
+		7DB2780C28BD02B500EA7EB5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -763,6 +787,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7D42B1D528BBF7E90005CACA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		7DB2780D28BD02B500EA7EB5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7DB2780C28BD02B500EA7EB5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 

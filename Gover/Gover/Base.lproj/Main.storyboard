@@ -141,6 +141,9 @@
                                 <rect key="frame" x="80" y="547" width="254" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="SingUp"/>
+                                <connections>
+                                    <action selector="singUpClick:" destination="1ac-zb-iQO" eventType="touchUpInside" id="fmc-3M-bRC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GBP-xE-xQB"/>

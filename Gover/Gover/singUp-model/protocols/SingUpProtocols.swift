@@ -6,18 +6,30 @@
 //
 
 import Foundation
-
+import Alamofire
 
 protocol ViewToPresenterSingUpProtocol {
-    var interactor : PresenterToInteractorSingUpProtocol {get set}
-    func singUpAction(name:String,surname:String,phoneNumber:String,email:String,password:String)
+    var interactor : PresenterToInteractorSingUpProtocol? {get set}
+    var singUpView : PresenterToViewSingUpProtocol? {get set}
+    func singUpAction(params:Parameters)
     
 }
 
 protocol PresenterToInteractorSingUpProtocol {
-    func singUp(name:String,surname:String,phoneNumber:String,email:String,password:String)
+    var singUpPresenter:InteractorToPresenterSingUpProtocol? {get set}
+    func singUp(params:Parameters)
     
 }
+
+protocol InteractorToPresenterSingUpProtocol {
+    func toPresenter(message:String)
+}
+
+protocol PresenterToViewSingUpProtocol {
+    func toView(message:String)
+}
+
+
 
 protocol PresenterToRouterSingUpProtocol {
     static func createModule(ref:SingUpVC)

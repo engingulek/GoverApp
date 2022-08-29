@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Alamofire
 class SingInVC: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     
@@ -21,7 +21,8 @@ class SingInVC: UIViewController {
 
     @IBAction func singInClick(_ sender: Any) {
         if let email = emailTextField.text, let password = passwordTextField.text {
-            singInObject?.singInAction(email: email, password: password)
+            let params : Parameters = ["email":email,"password":password]
+            singInObject?.singInAction(params: params)
         }
     }
     
