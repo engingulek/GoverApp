@@ -23,6 +23,8 @@
 		7D42B1D428BBF68C0005CACA /* SingInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1D328BBF68C0005CACA /* SingInRouter.swift */; };
 		7D42B1D728BBF7E90005CACA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7D42B1D628BBF7E90005CACA /* Alamofire */; };
 		7DB277FB28BCDC1D00EA7EB5 /* SingInResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */; };
+		7DB277FF28BCE2F700EA7EB5 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */; };
+		7DB2780528BCE6F300EA7EB5 /* SingUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		7D42B1D128BBF4B30005CACA /* SingInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInPresenter.swift; sourceTree = "<group>"; };
 		7D42B1D328BBF68C0005CACA /* SingInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInRouter.swift; sourceTree = "<group>"; };
 		7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInResult.swift; sourceTree = "<group>"; };
+		7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
+		7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpProtocols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +117,8 @@
 		7D42B19328BBC2F20005CACA /* Gover */ = {
 			isa = PBXGroup;
 			children = (
-				7D42B1C728BBE9020005CACA /* singPage-model */,
+				7DB277FC28BCE2CB00EA7EB5 /* singUp-model */,
+				7D42B1C728BBE9020005CACA /* singIn-model */,
 				7D42B19428BBC2F20005CACA /* AppDelegate.swift */,
 				7D42B19628BBC2F20005CACA /* SceneDelegate.swift */,
 				7D42B19A28BBC2F20005CACA /* Main.storyboard */,
@@ -142,7 +147,7 @@
 			path = GoverUITests;
 			sourceTree = "<group>";
 		};
-		7D42B1C728BBE9020005CACA /* singPage-model */ = {
+		7D42B1C728BBE9020005CACA /* singIn-model */ = {
 			isa = PBXGroup;
 			children = (
 				7DB277F928BCDC0400EA7EB5 /* Entity */,
@@ -152,7 +157,7 @@
 				7D42B1C928BBE9710005CACA /* router */,
 				7D42B1C828BBE95E0005CACA /* protocols */,
 			);
-			path = "singPage-model";
+			path = "singIn-model";
 			sourceTree = "<group>";
 		};
 		7D42B1C828BBE95E0005CACA /* protocols */ = {
@@ -201,6 +206,55 @@
 				7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		7DB277FC28BCE2CB00EA7EB5 /* singUp-model */ = {
+			isa = PBXGroup;
+			children = (
+				7DB2780328BCE6D800EA7EB5 /* interactor */,
+				7DB2780228BCE6CB00EA7EB5 /* router */,
+				7DB2780128BCE6C400EA7EB5 /* presenter */,
+				7DB2780028BCE6B500EA7EB5 /* protocols */,
+				7DB277FD28BCE2DA00EA7EB5 /* view */,
+			);
+			path = "singUp-model";
+			sourceTree = "<group>";
+		};
+		7DB277FD28BCE2DA00EA7EB5 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7DB2780028BCE6B500EA7EB5 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		7DB2780128BCE6C400EA7EB5 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		7DB2780228BCE6CB00EA7EB5 /* router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		7DB2780328BCE6D800EA7EB5 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +396,7 @@
 			files = (
 				7D42B1D028BBF45C0005CACA /* SingInInteractor.swift in Sources */,
 				7D42B19928BBC2F20005CACA /* SingInVC.swift in Sources */,
+				7DB277FF28BCE2F700EA7EB5 /* SingUpVC.swift in Sources */,
 				7DB277FB28BCDC1D00EA7EB5 /* SingInResult.swift in Sources */,
 				7D42B19F28BBC2F20005CACA /* Gover.xcdatamodeld in Sources */,
 				7D42B1CE28BBEA3A0005CACA /* SingInProtocols.swift in Sources */,
@@ -349,6 +404,7 @@
 				7D42B1D228BBF4B30005CACA /* SingInPresenter.swift in Sources */,
 				7D42B1D428BBF68C0005CACA /* SingInRouter.swift in Sources */,
 				7D42B19728BBC2F20005CACA /* SceneDelegate.swift in Sources */,
+				7DB2780528BCE6F300EA7EB5 /* SingUpProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
