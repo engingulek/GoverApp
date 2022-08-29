@@ -8,6 +8,8 @@
 import Foundation
 
 class SingInPresenter:ViewtoPresenterSingInProtocol {
+    var singInView: PresenterToViewSingInProtocol?
+    
     var interactor: PresenterToInteractorSingInProtocol?
     
     func singInAction(email: String, password: String) {
@@ -16,3 +18,15 @@ class SingInPresenter:ViewtoPresenterSingInProtocol {
     
     
 }
+
+
+extension SingInPresenter : InteractorToPresenterSingInProtocol {
+    func toPresenter(message: String) {
+        singInView?.toView(message: message)
+     
+       
+    }
+    
+    
+}
+

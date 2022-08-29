@@ -8,8 +8,11 @@
 import Foundation
 class SingInRouter : PresenterToRouterSingInProtocol{
     static func createModule(ref: SingInVC) {
-        ref.singInObject = SingInPresenter()
+        let presenter = SingInPresenter()
+        ref.singInObject = presenter
         ref.singInObject?.interactor = SingInInteractor()
+        ref.singInObject?.singInView = ref
+        ref.singInObject?.interactor?.singInPresenter = presenter
     }
     
     

@@ -27,3 +27,31 @@ class SingInVC: UIViewController {
     
 }
 
+
+extension SingInVC : PresenterToViewSingInProtocol {
+    func toView(message: String) {
+      
+       
+        if message == "1"{
+            alertMessage(title: "Error", message: "Email or password incorrect")
+            
+        }else{
+            // toHomePage
+        }
+        
+        
+      
+        
+    }
+    
+    func alertMessage(title:String,message:String){
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "Okey", style: .default) {action in
+        }
+        alertController.addAction(alertAction)
+        self.present(alertController, animated: true)
+    }
+    
+    
+}
+
