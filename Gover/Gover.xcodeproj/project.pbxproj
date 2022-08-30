@@ -28,6 +28,8 @@
 		7D70ACF728BE959C008DC326 /* HomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACF628BE959C008DC326 /* HomePageInteractor.swift */; };
 		7D70ACF928BE95E6008DC326 /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACF828BE95E6008DC326 /* Panel.swift */; };
 		7D70ACFB28BE9634008DC326 /* HomePageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACFA28BE9634008DC326 /* HomePageProtocols.swift */; };
+		7D70ACFD28BE9F80008DC326 /* PanelResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACFC28BE9F80008DC326 /* PanelResult.swift */; };
+		7D70ACFF28BEA148008DC326 /* PanelComment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACFE28BEA148008DC326 /* PanelComment.swift */; };
 		7DB277FB28BCDC1D00EA7EB5 /* SingInResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */; };
 		7DB277FF28BCE2F700EA7EB5 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */; };
 		7DB2780528BCE6F300EA7EB5 /* SingUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */; };
@@ -79,6 +81,8 @@
 		7D70ACF628BE959C008DC326 /* HomePageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageInteractor.swift; sourceTree = "<group>"; };
 		7D70ACF828BE95E6008DC326 /* Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel.swift; sourceTree = "<group>"; };
 		7D70ACFA28BE9634008DC326 /* HomePageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageProtocols.swift; sourceTree = "<group>"; };
+		7D70ACFC28BE9F80008DC326 /* PanelResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelResult.swift; sourceTree = "<group>"; };
+		7D70ACFE28BEA148008DC326 /* PanelComment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanelComment.swift; sourceTree = "<group>"; };
 		7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInResult.swift; sourceTree = "<group>"; };
 		7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
 		7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpProtocols.swift; sourceTree = "<group>"; };
@@ -278,6 +282,8 @@
 			isa = PBXGroup;
 			children = (
 				7D70ACF828BE95E6008DC326 /* Panel.swift */,
+				7D70ACFC28BE9F80008DC326 /* PanelResult.swift */,
+				7D70ACFE28BEA148008DC326 /* PanelComment.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -481,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D70ACFF28BEA148008DC326 /* PanelComment.swift in Sources */,
 				7D70ACF728BE959C008DC326 /* HomePageInteractor.swift in Sources */,
 				7D70ACF528BE958B008DC326 /* HomePageRouter.swift in Sources */,
 				7D70ACF328BE957D008DC326 /* HomePagePresenter.swift in Sources */,
@@ -500,6 +507,7 @@
 				7D42B1D428BBF68C0005CACA /* SingInRouter.swift in Sources */,
 				7D42B19728BBC2F20005CACA /* SceneDelegate.swift in Sources */,
 				7DB2780528BCE6F300EA7EB5 /* SingUpProtocols.swift in Sources */,
+				7D70ACFD28BE9F80008DC326 /* PanelResult.swift in Sources */,
 				7D70ACF928BE95E6008DC326 /* Panel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

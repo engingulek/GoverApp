@@ -8,10 +8,20 @@
 import Foundation
 
 class HomePagePresenter: ViewToPresenterHomePageProtocol {
+    var homePageView: PresenterToViewHomePageProtocol?
+    
     var interactor: PresenterToInteractorHomePageProtocol?
     
     func allPanelAction() {
         interactor?.allPanel()
+    }
+    
+}
+
+
+extension HomePagePresenter : InteractorToPresenterHomePageProtocol {
+    func toPresenter(panelList: Array<Panel>) {
+        homePageView?.toView(panelList: panelList)
     }
     
     

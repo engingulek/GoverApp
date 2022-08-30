@@ -14,10 +14,20 @@ class HomePageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         HomePageRouter.createModel(ref: self)
-        
+      
     }
     override func viewWillAppear(_ animated: Bool) {
         homePageObject?.allPanelAction()
     }
+    
+}
+
+
+extension HomePageVC : PresenterToViewHomePageProtocol{
+    func toView(panelList: Array<Panel>) {
+        self.panelList = panelList
+    }
+    // DispatchQueue.main.asycn { selt. collectionView.reloadaData()}
+    
     
 }

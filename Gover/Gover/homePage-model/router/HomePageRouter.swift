@@ -9,8 +9,10 @@ import Foundation
 
 class HomePageRouter : PresenterToRouterHomePageProtocol {
     static func createModel(ref: HomePageVC) {
-        ref.homePageObject = HomePagePresenter()
+        let presenter = HomePagePresenter()
+        ref.homePageObject = presenter
         ref.homePageObject?.interactor = HomePageInteractor()
+        ref.homePageObject?.interactor?.homePagePresenter = presenter
         
     }
     
