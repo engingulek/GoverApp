@@ -31,13 +31,14 @@ class SingInVC: UIViewController {
 
 extension SingInVC : PresenterToViewSingInProtocol {
     func toView(message: String) {
-      
+      print(message)
        
         if message == "1"{
             alertMessage(title: "Error", message: "Email or password incorrect")
             
         }else{
             // toHomePage
+            self.performSegue(withIdentifier: "singInToHomePage", sender: nil)
         }
         
         

@@ -49,7 +49,8 @@ extension SingUpVC: PresenterToViewSingUpProtocol {
         if message ==  "0" {
             alertMessage(title: "Error", message: "Email or phone number is used")
         }else {
-            // toHomePageView
+            print("Geçiş işlemi")
+            self.performSegue(withIdentifier: "singUpToHomePage", sender: nil)
         }
         
     }
