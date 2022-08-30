@@ -22,6 +22,12 @@
 		7D42B1D228BBF4B30005CACA /* SingInPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1D128BBF4B30005CACA /* SingInPresenter.swift */; };
 		7D42B1D428BBF68C0005CACA /* SingInRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D42B1D328BBF68C0005CACA /* SingInRouter.swift */; };
 		7D42B1D728BBF7E90005CACA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 7D42B1D628BBF7E90005CACA /* Alamofire */; };
+		7D70ACF128BE9510008DC326 /* HomePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACF028BE9510008DC326 /* HomePageVC.swift */; };
+		7D70ACF328BE957D008DC326 /* HomePagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACF228BE957D008DC326 /* HomePagePresenter.swift */; };
+		7D70ACF528BE958B008DC326 /* HomePageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACF428BE958B008DC326 /* HomePageRouter.swift */; };
+		7D70ACF728BE959C008DC326 /* HomePageInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACF628BE959C008DC326 /* HomePageInteractor.swift */; };
+		7D70ACF928BE95E6008DC326 /* Panel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACF828BE95E6008DC326 /* Panel.swift */; };
+		7D70ACFB28BE9634008DC326 /* HomePageProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D70ACFA28BE9634008DC326 /* HomePageProtocols.swift */; };
 		7DB277FB28BCDC1D00EA7EB5 /* SingInResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */; };
 		7DB277FF28BCE2F700EA7EB5 /* SingUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */; };
 		7DB2780528BCE6F300EA7EB5 /* SingUpProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */; };
@@ -67,6 +73,12 @@
 		7D42B1CF28BBF45C0005CACA /* SingInInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInInteractor.swift; sourceTree = "<group>"; };
 		7D42B1D128BBF4B30005CACA /* SingInPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInPresenter.swift; sourceTree = "<group>"; };
 		7D42B1D328BBF68C0005CACA /* SingInRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInRouter.swift; sourceTree = "<group>"; };
+		7D70ACF028BE9510008DC326 /* HomePageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageVC.swift; sourceTree = "<group>"; };
+		7D70ACF228BE957D008DC326 /* HomePagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePagePresenter.swift; sourceTree = "<group>"; };
+		7D70ACF428BE958B008DC326 /* HomePageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageRouter.swift; sourceTree = "<group>"; };
+		7D70ACF628BE959C008DC326 /* HomePageInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageInteractor.swift; sourceTree = "<group>"; };
+		7D70ACF828BE95E6008DC326 /* Panel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panel.swift; sourceTree = "<group>"; };
+		7D70ACFA28BE9634008DC326 /* HomePageProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageProtocols.swift; sourceTree = "<group>"; };
 		7DB277FA28BCDC1D00EA7EB5 /* SingInResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingInResult.swift; sourceTree = "<group>"; };
 		7DB277FE28BCE2F700EA7EB5 /* SingUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpVC.swift; sourceTree = "<group>"; };
 		7DB2780428BCE6F300EA7EB5 /* SingUpProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpProtocols.swift; sourceTree = "<group>"; };
@@ -125,6 +137,7 @@
 		7D42B19328BBC2F20005CACA /* Gover */ = {
 			isa = PBXGroup;
 			children = (
+				7D70ACE928BE94B1008DC326 /* homePage-model */,
 				7DB277FC28BCE2CB00EA7EB5 /* singUp-model */,
 				7D42B1C728BBE9020005CACA /* singIn-model */,
 				7D42B19428BBC2F20005CACA /* AppDelegate.swift */,
@@ -206,6 +219,67 @@
 				7D42B19828BBC2F20005CACA /* SingInVC.swift */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		7D70ACE928BE94B1008DC326 /* homePage-model */ = {
+			isa = PBXGroup;
+			children = (
+				7D70ACEF28BE94EE008DC326 /* entity */,
+				7D70ACEE28BE94E4008DC326 /* view */,
+				7D70ACED28BE94CE008DC326 /* protocols */,
+				7D70ACEC28BE94C7008DC326 /* presenter */,
+				7D70ACEB28BE94C1008DC326 /* router */,
+				7D70ACEA28BE94BA008DC326 /* interactor */,
+			);
+			path = "homePage-model";
+			sourceTree = "<group>";
+		};
+		7D70ACEA28BE94BA008DC326 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7D70ACF628BE959C008DC326 /* HomePageInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		7D70ACEB28BE94C1008DC326 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				7D70ACF428BE958B008DC326 /* HomePageRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		7D70ACEC28BE94C7008DC326 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7D70ACF228BE957D008DC326 /* HomePagePresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		7D70ACED28BE94CE008DC326 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7D70ACFA28BE9634008DC326 /* HomePageProtocols.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		7D70ACEE28BE94E4008DC326 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7D70ACF028BE9510008DC326 /* HomePageVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7D70ACEF28BE94EE008DC326 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				7D70ACF828BE95E6008DC326 /* Panel.swift */,
+			);
+			path = entity;
 			sourceTree = "<group>";
 		};
 		7DB277F928BCDC0400EA7EB5 /* Entity */ = {
@@ -407,20 +481,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D70ACF728BE959C008DC326 /* HomePageInteractor.swift in Sources */,
+				7D70ACF528BE958B008DC326 /* HomePageRouter.swift in Sources */,
+				7D70ACF328BE957D008DC326 /* HomePagePresenter.swift in Sources */,
 				7D42B1D028BBF45C0005CACA /* SingInInteractor.swift in Sources */,
 				7D42B19928BBC2F20005CACA /* SingInVC.swift in Sources */,
 				7DB2780728BCE84500EA7EB5 /* SingUpInteractor.swift in Sources */,
 				7DB2780928BCE87900EA7EB5 /* SingUpPresenter.swift in Sources */,
 				7DB2780B28BCE98500EA7EB5 /* SingUpRouter.swift in Sources */,
+				7D70ACF128BE9510008DC326 /* HomePageVC.swift in Sources */,
 				7DB277FF28BCE2F700EA7EB5 /* SingUpVC.swift in Sources */,
 				7DB277FB28BCDC1D00EA7EB5 /* SingInResult.swift in Sources */,
 				7D42B19F28BBC2F20005CACA /* Gover.xcdatamodeld in Sources */,
 				7D42B1CE28BBEA3A0005CACA /* SingInProtocols.swift in Sources */,
+				7D70ACFB28BE9634008DC326 /* HomePageProtocols.swift in Sources */,
 				7D42B19528BBC2F20005CACA /* AppDelegate.swift in Sources */,
 				7D42B1D228BBF4B30005CACA /* SingInPresenter.swift in Sources */,
 				7D42B1D428BBF68C0005CACA /* SingInRouter.swift in Sources */,
 				7D42B19728BBC2F20005CACA /* SceneDelegate.swift in Sources */,
 				7DB2780528BCE6F300EA7EB5 /* SingUpProtocols.swift in Sources */,
+				7D70ACF928BE95E6008DC326 /* Panel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
