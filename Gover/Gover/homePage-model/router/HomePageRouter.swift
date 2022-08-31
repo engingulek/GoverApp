@@ -13,6 +13,7 @@ class HomePageRouter : PresenterToRouterHomePageProtocol {
         ref.homePageObject = presenter
         ref.homePageObject?.interactor = HomePageInteractor()
         ref.homePageObject?.interactor?.homePagePresenter = presenter
+        ref.homePageObject?.homePageView = ref
         
     }
     

@@ -19,8 +19,8 @@ class Panel: Codable {
         self.userId = userId
         self.text = text
         self.date = date
-     //   self.comment = comment
-        //self.areaId = areaId
+        self.comment = comment
+        self.areaId = areaId
     }
 
 }
