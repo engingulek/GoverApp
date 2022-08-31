@@ -8,15 +8,17 @@
 import Foundation
 
 class Panel: Codable {
-    var userId:Int?
+    var name:String?
+    var surname:String?
     var text:String?
     var date:String?
     var comment:Array<PanelComment>?
     var areaId:Int?
     
     
-    init(userId:Int,text:String,date:String,comment:Array<PanelComment>,areaId:Int){
-        self.userId = userId
+    init(name:String,surname:String,text:String,date:String,comment:Array<PanelComment>,areaId:Int){
+        self.name = name
+        self.surname = surname
         self.text = text
         self.date = date
         self.comment = comment

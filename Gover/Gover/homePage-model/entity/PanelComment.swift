@@ -8,11 +8,13 @@
 import Foundation
 
 class PanelComment : Codable {
-    var userId:Int?
+    var name:String?
+    var surname:String?
     var textComment:String?
     
-    init(userId:Int,textComment:String){
-        self.userId  = userId
+    init(name:String,surname:String,textComment:String){
+        self.name = name
+        self.surname = surname
         self.textComment = textComment
     }
     

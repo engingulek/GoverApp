@@ -454,6 +454,9 @@
                     <navigationItem key="navigationItem" id="YnW-EZ-BIg"/>
                     <connections>
                         <outlet property="commentTableView" destination="6KJ-t5-V7Q" id="na5-Iv-qDb"/>
+                        <outlet property="dateLabel" destination="twQ-Mo-0ig" id="ujJ-t3-etv"/>
+                        <outlet property="nameSurnameLabel" destination="oZA-wS-26J" id="EP1-YK-lVE"/>
+                        <outlet property="textLabel" destination="Gcz-t2-qJf" id="oEO-tc-Tb2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x93-8a-710" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -43,9 +43,7 @@ class HomePageVC: UIViewController{
 extension HomePageVC : PresenterToViewHomePageProtocol{
     func toView(panelList: Array<Panel>) {
         self.panelList = panelList
-        for a in self.panelList {
-            print(a.userId!)
-        }
+      
         DispatchQueue.main.async {
             self.panelCollectionView.reloadData()
         }
@@ -60,15 +58,15 @@ extension HomePageVC : PresenterToViewHomePageProtocol{
 
 extension HomePageVC: UICollectionViewDataSource,UICollectionViewDelegate,PanelCVCProtocol  {
     func viewCommentClickProtocol(indexPath: IndexPath) {
-        let comment = self.panelList[indexPath.row].comment
-        performSegue(withIdentifier: "toCommentPage", sender: comment)
+        let panel = self.panelList[indexPath.row]
+        performSegue(withIdentifier: "toCommentPage", sender: panel)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toCommentPage" {
-            if let data = sender as? [PanelComment] {
+            if let data = sender as? Panel {
                 let toVC = segue.destination as! CommentPageVC
-                toVC.comment = data
+                toVC.panel = data
             }
         }
     }
@@ -84,6 +82,8 @@ extension HomePageVC: UICollectionViewDataSource,UICollectionViewDelegate,PanelC
         let cell = panelCollectionView.dequeueReusableCell(withReuseIdentifier: "panelCell", for: indexPath) as! PanelCVC
         let panel = panelList[indexPath.row]
         cell.textLabel.text = panel.text
+        cell.nameSurnameLabel.text = "\(panel.name!) \(panel.surname!)"
+        cell.dateLabel.text = "\(panel.date!)"
         cell.cellIndexPath = indexPath
         cell.panelCVCProtocol = self
         
